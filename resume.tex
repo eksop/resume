@@ -1,0 +1,236 @@
+% Rajat Shukla's Resume
+% Created: 05 Dec 2014
+% Last Modified: 05 Dec 2014
+
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Rajat Shukla}
+\newcommand{\addr}{Roopena Agrahara, Bommanahalli, Bengaluru KA - 560068}
+\newcommand{\contact}{shk.rajat@gmail.com | +91 7406152642}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+  \begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% This defines how the name looks
+\newcommand{\bignamenew}[1]{
+  \begin{center}\selectfont\Huge\scshape#1\end{center}
+}
+
+
+% This defines how the address information will look
+\newcommand{\addrinfo}[1]{
+  \begin{center}\selectfont\small\textit#1\end{center}
+}
+
+% This defines how the contact information will look
+\newcommand{\contactinfo}[1]{
+  \begin{center}\selectfont\small\textbf#1\end{center}
+}
+
+
+\newcommand{\resdescpara}[1]{
+  \vspace{-5pt}
+\item
+  #1
+}
+
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+  \vspace{4pt}
+	     {\fontfamily{phv}\selectfont\Large#1}
+	     \begin{itemize}
+	       \vspace{3pt}
+}{
+	     \end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+  \vspace{-4pt}
+\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+  \vspace{-1pt}
+\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+  \vspace{-5pt}
+\item
+  \textbf{#1} --- #2 \\
+  \textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+  \resbigitem{#1}{#2}{#3}
+  \vspace{-2pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+% This is a list that comes without a resbigitem
+\newenvironment{ressubsecwo}[3]{
+  \resbigitem{#1}{#2}{#3}
+  \vspace{0pt}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+  \resitem{\textbf{#1}}
+  \vspace{-5pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+%\fontfamily{ppl} \selectfont
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Name
+%\bignamenew{\name}
+\bigname{\name}
+
+% Addr
+\vspace{2 pt}
+\addrinfo{\addr}
+
+% Contact
+\contactinfo{\contact}
+\vspace{8 pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective:
+\begin{ressection}{Objective}
+  \resdescpara{To be an active employee in your company and to express and develop my skills for the mutual development of company and myself.}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Summary:
+\begin{ressection}{Summary}
+  \resitem{Currently working as a software engineer in Webyog Inc.}
+  \resitem{Having 1.25 years of experience as a software engineer.}
+  \resitem{Excellent programming skills and problem solving skills.}
+  \resitem{Secured 95.05 percentile in pH test conducted by eLitmus.}
+  \resitem{Enthusiastic, curious and detail oriented.}
+  \resitem{Knowledge seeking and quick learner.}  
+  \resitem{Github username : xitkov.}
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Education:
+\begin{ressection}{Education}
+  % GB Pant
+  \begin{ressubsec}{G.B. Pant Engineering College}{Pauri, Uttarakhand}{B.Tech in Computer Science and Engineering: June 2013}
+	\ressubitem{Score : 69.96\% (overall)}
+  \end{ressubsec}
+  % XII
+  \ressubsecwo{AISSCE, Standard XII}{CBSE, Delhi}{Score : 83.20\% (overall): June 2009}
+  % X
+  \ressubsecwo{AISSE, Standard X}{CBSE, Delhi}{Score : 87.20\% (overall): June 2007}
+  % END
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Work Experience}
+  % Webyog
+  \begin{ressubsec}{Webyog Inc., on CloudMagic team}{Bengaluru, KA}{Software Engineer: Aug, 2014--present}
+    \ressubitem{Working as a Software Engineer in the CloudMagic's server team.}
+    \ressubitem{Manage 100~150 Linux servers on the cloud (AWS infrastructure).}
+    \ressubitem{Develop tools and scripts to improve CloudMagic's infrastructure.}
+    \ressubitem{Technologies - AWS SDK with PHP, Capistrano, MySQL, ElasticSearch, Graphite, etc.}
+  \end{ressubsec}
+  % Xora
+  \begin{ressubsec}{Xora Inc., now a Clicksoftware company}{Bengaluru, KA}{Software Engineer: Sept, 2013--Aug, 2014}
+    \ressubitem{Worked as a Software Engineer in the Mobile Apps team.}
+    \ressubitem{Developed for Xora StreetSmart, on various mobile platforms, such as Android, Blackberry, MIDP and Brew.}
+    \ressubitem{Also worked on automation of mobile application using Calabash and Appium with the Device QA team.}
+    \ressubitem{Technologies - Android SDK, Blackberry SDK, Java ME, Brew SDK.}
+  \end{ressubsec}
+  % GB Pant
+  \begin{ressubsec}{G.B. Pant Engineering College}{Pauri, UK}{Final year project: 2013}
+    \ressubitem{Designed a prototype for cluster computation, using the Master-Slave model.}
+    \ressubitem{Simulated parallel execution of algorithms such as -- Prime Sieve Algorithm, Matrix Chain Multiplication Algorithm, Quick Sort Algorithm.}
+    \ressubitem{Developed programs based on famous LCG algorithm and Mersenne Twister algorithm to feed random numbers.}
+  \end{ressubsec} 
+  % Github
+  \begin{ressubsec}{Repositories on github.com}{xitkov}{https://github.com/user/xitkov}
+    \ressubitem{Projecteuler: Collection of C programs to solve problems on http://projecteuler.net}
+    \ressubitem{Latexdocs:  Collection of refcards, my resume and other documents written in \LaTeX.}
+    \ressubitem{Dotfiles: Collection dotfiles, e.g .emacs, .Xresources, etc.}
+  \end{ressubsec} 
+  % END
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+  % OS
+  \resitem{\textbf{Operating Systems:} Linux (Debian, Amazon Linux, Arch Linux), Windows XP/7.}
+  % Languages
+  \begin{reslist}{Computer Languages:}
+	\ressubitem{Proficient in C, C++, Java, PHP, Ruby, UNIX Shells, \LaTeX.}
+    \ressubitem{Familiar with Perl, Python, SQL.}
+  \end{reslist}
+  % Tools
+  \begin{reslist}{Tools and Systems:}
+    \ressubitem{Proficient in Emacs, Vi, AWS, package management tools.}
+    \ressubitem{Familiar with MySQL, Netbeans.}
+  \end{reslist}
+  % END
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Achievements and Activities}
+  \resitem{Manage a heterogeneous home network and family server (2011--present).}
+  \resitem{Secured 95.05 percentile in pH test conducted by eLitmus (Aug 2013).}
+  \resitem{Event Coordinator in Spandan 2013 at college.}
+  \resitem{Solved 41 problems on projecteuler.net.}
+  \resitem{Scored 80 out of 80 marks in exam of mathematics in Class X.}
+  \resitem{Two times winner of Counter-Strike at college.}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Achievements and Activities}
+  \resitem{Computer programming.}
+  \resitem{Reading and Web browsing.}
+  \resitem{Video gaming and watching anime.}
+  \resitem{Learning about technology.}
+  \resitem{Listening to heavy metal music.}
+\end{ressection}
+
+\end{document}
+% THE END ;)
