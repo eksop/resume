@@ -1,6 +1,6 @@
 % Rajat Shukla's Resume
 % Created: 05 Dec 2014
-% Last Modified: 05 Dec 2014
+% Last Modified: 03 Aug 2015
 
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
@@ -33,7 +33,6 @@
   \begin{center}\selectfont\Huge\scshape#1\end{center}
 }
 
-
 % This defines how the address information will look
 \newcommand{\addrinfo}[1]{
   \begin{center}\selectfont\small\textit#1\end{center}
@@ -44,13 +43,11 @@
   \begin{center}\selectfont\small\textbf#1\end{center}
 }
 
-
 \newcommand{\resdescpara}[1]{
   \vspace{-5pt}
 \item
   #1
 }
-
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
@@ -110,7 +107,6 @@
 }
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Now for the actual document:
 
@@ -118,9 +114,10 @@
 
 %\fontfamily{ppl} \selectfont
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
+
 %\bignamenew{\name}
 \bigname{\name}
 
@@ -134,25 +131,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Objective:
+
 \begin{ressection}{Objective}
-  \resdescpara{To be an active employee in your company and to express and develop my skills for the mutual development of company and myself.}
+  \resdescpara{To be an active employee in your company and to express and develop my skills for the mutual development of the company and myself.}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Summary:
+
 \begin{ressection}{Summary}
   \resitem{Currently working as a software engineer in Webyog Inc.}
-  \resitem{Having 1.25 years of experience as a software engineer.}
+  \resitem{Having 2 years of experience as a software engineer.}
   \resitem{Excellent programming skills and problem solving skills.}
   \resitem{Secured 95.05 percentile in pH test conducted by eLitmus.}
-  \resitem{Enthusiastic, curious and detail oriented.}
-  \resitem{Knowledge seeking and quick learner.}  
+  \resitem{Curious and a quick learner.}  
   \resitem{Github username : xitkov.}
 \end{ressection}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Education:
+
 \begin{ressection}{Education}
   % GB Pant
   \begin{ressubsec}{G.B. Pant Engineering College}{Pauri, Uttarakhand}{B.Tech in Computer Science and Engineering: June 2013}
@@ -166,17 +165,19 @@
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
+% Work experience
+
 \begin{ressection}{Work Experience}
   % Webyog
   \begin{ressubsec}{Webyog Inc., on CloudMagic team}{Bengaluru, KA}{Software Engineer: Aug, 2014--present}
     \ressubitem{Working as a Software Engineer in the CloudMagic's server team.}
-    \ressubitem{Manage 100~150 Linux servers on the cloud (AWS infrastructure).}
-    \ressubitem{Develop tools and scripts to improve CloudMagic's infrastructure.}
+    \ressubitem{Managing more than 200 Linux servers on the cloud (AWS infrastructure).}
+    \ressubitem{Developing tools and scripts to improve CloudMagic's infrastructure.}
     \ressubitem{Technologies - AWS SDK with PHP, Capistrano, MySQL, ElasticSearch, Graphite, etc.}
   \end{ressubsec}
   % Xora
   \begin{ressubsec}{Xora, a ClickSoftware company}{Bengaluru, KA}{Software Engineer: Sept, 2013--Aug, 2014}
-    \ressubitem{Worked as a Software Engineer in the Mobile Apps team.}
+    \ressubitem{Worked as a Software Engineer on their Mobile Apps team.}
     \ressubitem{Developed for Xora StreetSmart, on various mobile platforms, such as Android, Blackberry, MIDP and Brew.}
     \ressubitem{Also worked on automation of mobile application using Calabash and Appium with the Device QA team.}
     \ressubitem{Technologies - Android SDK, Blackberry SDK, Java ME, Brew SDK.}
@@ -197,39 +198,44 @@
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+
 \begin{ressection}{Skills}
   % OS
-  \resitem{\textbf{Operating Systems:} Linux (Debian, Amazon Linux, Arch Linux), Windows XP/7.}
+  \resitem{\textbf{Operating Systems:} GNU/Linux, Mac OS X, Windows OS.}
   % Languages
   \begin{reslist}{Computer Languages:}
-	\ressubitem{Proficient in C, C++, Java, PHP, Ruby, UNIX Shells, \LaTeX.}
-    \ressubitem{Familiar with Perl, Python, SQL.}
+	\ressubitem{Proficient in C, Java, PHP, Ruby, Lisp and \LaTeX.}
+    \ressubitem{Familiar with Python and nodeJS}
   \end{reslist}
   % Tools
   \begin{reslist}{Tools and Systems:}
-    \ressubitem{Proficient in Emacs, Vi, AWS, package management tools.}
-    \ressubitem{Familiar with MySQL, Netbeans.}
+    \ressubitem{Proficient in Linux tools, AWS, Emacs, Graphite and Grafana.}
+    \ressubitem{Familiar with Elasticsearch, Influx DB and Vagrant.}
   \end{reslist}
   % END
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
+% Achievements
+
 \begin{ressection}{Achievements and Activities}
-  \resitem{Manage a heterogeneous home network and family server (2011--present).}
-  \resitem{Secured 95.05 percentile in pH test conducted by eLitmus (Aug 2013).}
-  \resitem{Event Coordinator in Spandan 2013 at college.}
-  \resitem{Solved 41 problems on projecteuler.net.}
+  \resitem{Secured 95.45 percentile in pH test conducted by eLitmus (Aug 2013).}
+  \resitem{Solved 52 problems on projecteuler.net.}
   \resitem{Scored 80 out of 80 marks in exam of mathematics in Class X.}
+  \resitem{Event Coordinator in Spandan 2013 at college tech fest.}
   \resitem{Two times winner of Counter-Strike at college.}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
+% Interests
+
 \begin{ressection}{Hobbies and Interests}
-  \resitem{Computer programming.}
-  \resitem{Reading and Web browsing.}
-  \resitem{Video gaming and watching anime.}
-  \resitem{Learning about technology.}
-  \resitem{Listening to heavy metal music.}
+  \resitem{Good in programming.}
+  \resitem{Avid reader.}
+  \resitem{Supports E-sports.}
+  \resitem{Loves movies and anime.}
+  \resitem{Listens to music.}
 \end{ressection}
 
 \end{document}
