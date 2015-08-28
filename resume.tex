@@ -1,6 +1,6 @@
 % Rajat Shukla's Resume
 % Created: 05 Dec 2014
-% Last Modified: 03 Aug 2015
+% Last Modified: 28 Aug 2015
 
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
@@ -140,12 +140,12 @@
 % Summary:
 
 \begin{ressection}{Summary}
-  \resitem{A full stack developer, currently working as a DevOps engineer.}
+  \resitem{A full stack developer, currently working as a Software Engineer at Webyog Inc.}
   \resitem{Having 2 years of experience, developing software solutions.}
   \resitem{Excellent programming skills and problem solving skills.}
   \resitem{Secured 95.05 percentile in pH test conducted by eLitmus.}
   \resitem{Curious and a quick learner.}  
-  \resitem{Github username : xitkov.}
+  % \resitem{Github username : xitkov.}
 \end{ressection}
 
 
@@ -170,16 +170,17 @@
 \begin{ressection}{Work Experience}
   % Webyog
   \begin{ressubsec}{Webyog Inc., on CloudMagic team}{Bengaluru, KA}{Software Engineer: Aug, 2014--present}
-    \ressubitem{Working as a Software Engineer in the CloudMagic's server team.}
-    \ressubitem{Managing more than 200 Linux servers on the cloud (AWS infrastructure).}
-    \ressubitem{Developing tools and scripts to improve CloudMagic's infrastructure.}
-    \ressubitem{Technologies - AWS SDK with PHP, Capistrano, MySQL, ElasticSearch, Graphite, etc.}
+    \ressubitem{Managing more than 200 Linux servers on the cloud (on AWS), using our own provisioning and monitoring technologies.}
+    \ressubitem{Automated the launch of a complete Cloudmagic test environment, reducing the effort and time spent otherwise.}
+    \ressubitem{Scaled the Graphite and Elasticsearch servers horizontly, such that now they perform better and are free of SPOF and availability issues.}
+    \ressubitem{Earlier integrated Twilio for call alerts, and now recently integrated Pagerduty for call alerts, which supports call rotatation and other benefits.}
+    \ressubitem{Technologies - AWS SDK, Capistrano, ElasticSearch, Graphite, Grafana, etc.}
   \end{ressubsec}
   % Xora
   \begin{ressubsec}{Xora, a ClickSoftware company}{Bengaluru, KA}{Software Engineer: Sept, 2013--Aug, 2014}
-    \ressubitem{Worked as a Software Engineer on their Mobile Apps team.}
-    \ressubitem{Developed for Xora StreetSmart, on various mobile platforms, such as Android, Blackberry, MIDP and Brew.}
-    \ressubitem{Also worked on automation of mobile application using Calabash and Appium with the Device QA team.}
+    \ressubitem{Worked on Xora StreetSmart, on various mobile platforms, such as Android, Blackberry, MIDP and Brew.}
+    \ressubitem{Bootstraped automation testing framework (Calabash and Appium) with the Device QA team.}
+    \ressubitem{Wrote a framework to tail log files on production environment, and report new and never seen before exceptions to the team, it was useful with releases.}
     \ressubitem{Technologies - Android SDK, Blackberry SDK, Java ME, Brew SDK.}
   \end{ressubsec}
   % GB Pant
@@ -190,9 +191,11 @@
   \end{ressubsec} 
   % Github
   \begin{ressubsec}{Repositories on github.com}{xitkov}{https://github.com/user/xitkov}
+    \ressubitem{Emacs.d: My Emacs init repository.}
     \ressubitem{Projecteuler: Collection of C programs to solve problems on http://projecteuler.net}
-    \ressubitem{Latexdocs:  Collection of refcards, my resume and other documents written in \LaTeX.}
-    \ressubitem{Dotfiles: Collection dotfiles, e.g .emacs, .Xresources, etc.}
+    \ressubitem{Xitkov.com: Source code of http://xitkov.com}
+    \ressubitem{Dotfiles: Collection dotfiles, e.g .zshrc, .Xresources, etc.}
+    \ressubitem{Latex:  Collection of refcards, my resume and other documents written in \LaTeX.}
   \end{ressubsec} 
   % END
 \end{ressection}
@@ -202,16 +205,16 @@
 
 \begin{ressection}{Skills}
   % OS
-  \resitem{\textbf{Operating Systems:} GNU/Linux, Mac OS X, Windows OS.}
+  % \resitem{\textbf{Operating Systems:} GNU/Linux, Mac OS X, Windows OS.}
   % Languages
   \begin{reslist}{Computer Languages:}
-	\ressubitem{Proficient in C, Java, PHP, Ruby, Lisp and \LaTeX.}
-    \ressubitem{Familiar with Python and nodeJS}
+	\ressubitem{Currently using : PHP, Ruby, Javascript, Emacs Lisp and \LaTeX.}
+    \ressubitem{Used in past : C, Java, and Python}
   \end{reslist}
   % Tools
-  \begin{reslist}{Tools and Systems:}
-    \ressubitem{Proficient in Linux tools, AWS, Emacs, Graphite and Grafana.}
-    \ressubitem{Familiar with Elasticsearch, Influx DB and Vagrant.}
+  \begin{reslist}{Tools and Software:}
+    \ressubitem{Tools : Linux tools, AWS, Emacs, collectd, statsd, etc}
+    \ressubitem{Software : AWS SDK, Elasticsearch, Graphite, Nagios, etc.}
   \end{reslist}
   % END
 \end{ressection}
@@ -220,22 +223,23 @@
 % Achievements
 
 \begin{ressection}{Achievements and Activities}
-  \resitem{Secured 95.45 percentile in pH test conducted by eLitmus (Aug 2013).}
-  \resitem{Solved 52 problems on projecteuler.net.}
+  \resitem{Going to attend Amazon AWS re:invent at Las Vegas, on Oct 2015.}
+  \resitem{Secured 95.05 percentile (overall) in pH test conducted by eLitmus (Aug 2013).}
+  \resitem{Solved 42 problems on projecteuler.net.}
   \resitem{Scored 80 out of 80 marks in exam of mathematics in Class X.}
-  \resitem{Event Coordinator in Spandan 2013 at college tech fest.}
-  \resitem{Two times winner of Counter-Strike at college.}
+  \resitem{Technical Event Coordinator in Spandan 2013 at college tech fest.}
+  % \resitem{Two times winner of Counter-Strike at college.}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Interests
 
 \begin{ressection}{Hobbies and Interests}
-  \resitem{Good in programming.}
-  \resitem{Avid reader.}
-  \resitem{Supports E-sports.}
-  \resitem{Loves movies and anime.}
-  \resitem{Listens to music.}
+  \resitem{Good in programming and technology.}
+  % \resitem{Avid reader of non-fiction writings.}
+  \resitem{Supports E-sports amd plays Dota 2 and CS GO.}
+  \resitem{Loves movies, tv series and anime.}
+  % \resitem{Listens to music, particulary heavy metal music.}
 \end{ressection}
 
 \end{document}
