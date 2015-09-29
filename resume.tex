@@ -4,6 +4,8 @@
 
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
+\usepackage{tgpagella}
+
 \usepackage[T1]{fontenc}
 
 \pagestyle{empty}
@@ -52,11 +54,11 @@
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
   \vspace{4pt}
-	     {\fontfamily{phv}\selectfont\Large#1}
-	     \begin{itemize}
-	       \vspace{3pt}
+         {\fontfamily{phv}\selectfont\Large#1}
+         \begin{itemize}
+           \vspace{3pt}
 }{
-	     \end{itemize}
+         \end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
@@ -144,7 +146,7 @@
   \resitem{Having 2 years of experience, developing software solutions.}
   \resitem{Excellent programming skills and problem solving skills.}
   \resitem{Secured 95.05 percentile in pH test conducted by eLitmus.}
-  \resitem{Curious and a quick learner.}  
+  \resitem{Curious and a quick learner.}
   % \resitem{Github username : xitkov.}
 \end{ressection}
 
@@ -155,7 +157,7 @@
 \begin{ressection}{Education}
   % GB Pant
   \begin{ressubsec}{G.B. Pant Engineering College}{Pauri, Uttarakhand}{B.Tech in Computer Science and Engineering: June 2013}
-	\ressubitem{Score : 69.96\% (overall)}
+    \ressubitem{Score : 69.96\% (overall)}
   \end{ressubsec}
   % XII
   \ressubsecwo{AISSCE, Standard XII}{CBSE, Delhi}{Score : 83.20\% (overall): June 2009}
@@ -188,7 +190,7 @@
     \ressubitem{Designed a prototype for cluster computation, using the Master-Slave model.}
     \ressubitem{Simulated parallel execution of algorithms such as -- Prime Sieve Algorithm, Matrix Chain Multiplication Algorithm, Quick Sort Algorithm.}
     \ressubitem{Developed programs based on famous LCG algorithm and Mersenne Twister algorithm to feed random numbers.}
-  \end{ressubsec} 
+  \end{ressubsec}
   % Github
   \begin{ressubsec}{Repositories on github.com}{xitkov}{https://github.com/user/xitkov}
     \ressubitem{Emacs.d: My Emacs init repository.}
@@ -196,7 +198,7 @@
     \ressubitem{Xitkov.com: Source code of http://xitkov.com}
     \ressubitem{Dotfiles: Collection dotfiles, e.g .zshrc, .Xresources, etc.}
     \ressubitem{Latex:  Collection of refcards, my resume and other documents written in \LaTeX.}
-  \end{ressubsec} 
+  \end{ressubsec}
   % END
 \end{ressection}
 
@@ -208,7 +210,7 @@
   % \resitem{\textbf{Operating Systems:} GNU/Linux, Mac OS X, Windows OS.}
   % Languages
   \begin{reslist}{Computer Languages:}
-	\ressubitem{Currently using : PHP, Ruby, Javascript, Emacs Lisp and \LaTeX.}
+    \ressubitem{Currently using : PHP, Ruby, Javascript, Emacs Lisp and \LaTeX.}
     \ressubitem{Used in past : C, Java, and Python}
   \end{reslist}
   % Tools
