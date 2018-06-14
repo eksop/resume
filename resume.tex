@@ -27,7 +27,7 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-  \begin{center}\fontfamily{phv}\selectfont\Huge#1\end{center}
+  \begin{center}\fontfamily{phv}\selectfont\LARGE#1\end{center}
 }
 
 % This defines how the name looks
@@ -133,61 +133,123 @@
 % Objective:
 
 \begin{ressection}{Objective}
-  \resdescpara{To be an active employee in your company and to express and develop my skills for the mutual development of the company and myself.}
+  \resitem{
+    I am looking for a switch to work in backend developement as
+    I have more developement experience than core 'DevOps' experience.
+  }
+  \resitem{
+    I have worked extensively on infra automation (treating
+    Infrastructure as Code).
+  }
+  \resitem{
+    Experienced with AWS technologies, ELK stack, microservices, etc.
+  }
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Summary:
 
 \begin{ressection}{Summary}
-  \resitem{A DevOps Engineer with over 4 years of experience.}
-  \resitem{Knowledge of AWS cloud, monitoring tools, deployment and automation.}
-  \resitem{Excellent programming skills and problem solving skills.}
-  \resitem{Knowledge of DevOps practices, as well as Backend development.}
-  \resitem{Have worked on Android, iOS development as well previously.}
+  \resitem{
+    Senior Software Engineer with almost 5 years of experience.
+  }
+  \resitem{
+    Working on writing backend software and automating infra.
+  }
+  \resitem{
+    Knowledge of AWS technologies, ELK, Nagios, Graphite, etc.
+  }
+  \resitem{
+    Knowledge of backend software development.
+  }
+  \resitem{
+    Have previously worked on Android, iOS development.
+  }
 \end{ressection}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Education:
 
-\begin{ressection}{Education}
-  % GB Pant
-  \begin{ressubsec}{G.B. Pant Engineering College}{Pauri, Uttarakhand}{B.Tech in Computer Science and Engineering: June 2013}
-    \ressubitem{Score : 69.96\% (overall)}
-  \end{ressubsec}
-  % XII
-  \ressubsecwo{AISSCE, Standard XII}{CBSE, Delhi}{Score : 83.20\% (overall): June 2009}
-  % X
-  \ressubsecwo{AISSE, Standard X}{CBSE, Delhi}{Score : 87.20\% (overall): June 2007}
-  % END
-\end{ressection}
+% \begin{ressection}{Education}
+%   % GB Pant
+%   \begin{ressubsec}{G.B. Pant Engineering College}{Pauri, Uttarakhand}{B.Tech in Computer Science and Engineering: June 2013}
+%     \ressubitem{Score : 69.96\% (overall)}
+%   \end{ressubsec}
+%   % XII
+%   \ressubsecwo{AISSCE, Standard XII}{CBSE, Delhi}{Score : 83.20\% (overall): June 2009}
+%   % X
+%   \ressubsecwo{AISSE, Standard X}{CBSE, Delhi}{Score : 87.20\% (overall): June 2007}
+%   % END
+% \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Work experience
 
-\begin{ressection}{Work Experience}
+\begin{ressection}{Experience}
   % Webyog
   \begin{ressubsec}{NewtonHQ.com - CloudMagic}{Bengaluru, KA}{Software Engineer: Aug, 2014--present}
-    \ressubitem{Working in the backend team as a DevOps Engineer, managing more than 250 Linux servers on the cloud (on AWS), using our own provisioning and monitoring technologies}
-    \ressubitem{Working on the API development as well, worked with IMAP, EWS and EAS protocols, writing wrapper APIs on top of them.}
-    \ressubitem{Automated the launch of a complete Cloudmagic test environment, reducing the effort and time spent otherwise.}
-    \ressubitem{Have worked on setting up common monitoring/logging softwares such as Graphite, Elasticsearch, etc.}
-    \ressubitem{Earlier integrated Twilio for call alerts, and now recently integrated Pagerduty for call alerts.}
-    \ressubitem{Technologies - AWS PHP SDK, Python, PHP, Capistrano, ElasticSearch, Graphite, etc.}
+    \ressubitem{
+      Working in the backend team automating infra setup
+      and deployment using our own provisioning and deployment software.
+    }
+    \ressubitem{
+      Setup and maintenance of federated graphite and
+      clustered elasticsearch (ELK) and PHP wrapper over their APIs.
+    }
+    \ressubitem{
+      Automated recovery of both stateless/stateful EC2 instances whenever they are marked
+      system/instance impaired by AWS or have a scheduled event pending.
+    }
+    \ressubitem{
+      Wrote a wrapper over Route53 API to enable us to use DNS like a load
+      balancer reducing costs in test environments.
+    }
+    \ressubitem{
+      Wrote monitoring using graphite APIs and Cloudwatch
+      APIs that monitors performance of our EC2 instances, RDS, redis,
+      etc.
+    }
+    \ressubitem{
+      Automatic autoscaling of EC2 instances based on
+      parameters like Gearman Job count, SQS incoming messages,
+      ELB request count, CPU Usage, etc.
+    }
+    \ressubitem{
+      Automated creation/termination, stop/start/refresh of a full Newton
+      test environment, reducing the time and effort spent otherwise.
+    }
+    \ressubitem{
+      Automated syncing logs from instances to a single
+      instance (using rsync) and then archiving them
+      to S3 for long term storage.
+    }
+    \ressubitem{
+      Have worked on Nagios for monitoring, Twilio and Pagerduty for
+      call alerts.
+    }
+    \ressubitem{
+      Technologies - AWS PHP SDK, Python, PHP, Capistrano,
+      ElasticSearch, Graphite, etc.
+    }
   \end{ressubsec}
   % Xora
   \begin{ressubsec}{Xora, a ClickSoftware company}{Bengaluru, KA}{Software Engineer: Sept, 2013--Aug, 2014}
-    \ressubitem{Worked on Xora StreetSmart, on various mobile platforms, such as Android, Blackberry, MIDP and Brew.}
-    \ressubitem{Bootstraped automation testing framework (Calabash and Appium) with the Device QA team.}
-    \ressubitem{Technologies - Android SDK, Blackberry SDK, Java ME, Brew SDK.}
-  \end{ressubsec}
-  % Grofee
-  \begin{ressubsec}{pansaribazaar.com, a hyperlocal e-store}{Freelance project}{Nov, 2015--March, 2016}
-    \ressubitem{A product to enable hyperlocal sellers sell product online.}
-    \ressubitem{I was responsible for bootstrapping the backend development, designing backend database schema, etc.}
-    \ressubitem{It provides better filtering and better categorization of products compared to what BigBasket and others offer.}
-    \ressubitem{Technologies - Laravel, Mysql, Elasticsearch, Nginx, etc.}
+    \ressubitem{
+      Worked on Xora StreetSmart, on various mobile platforms, such as
+      Android, Blackberry, MIDP and Brew.
+    }
+    \ressubitem{
+      Worked on implementing Trips feature in the app, wherein it had
+      to collect breadcrumb trail of a user and calculate distance and
+      fuel usage.
+    }
+    \ressubitem{
+      Helped QA team implement testing using automation testing framework Calabash.
+    }
+    \ressubitem{
+      Technologies - Android SDK, Blackberry SDK, Java ME, Brew SDK.
+    }
   \end{ressubsec}
   % Xamii
   % \begin{ressubsec}{Xamii, an examination solution}{Side project}{March, 2016--present}
@@ -203,12 +265,27 @@
   %\end{ressubsec}
   % Github
   \begin{ressubsec}{Repositories on github.com}{rajats105}{https://github.com/rajats105}
-    \ressubitem{arana: Web scaper built on top of CasperJS, easily customisable.}
-    \ressubitem{prezto: Forked from sorin-ionescu/prezto, I added a nice theme, called 'electro'.}
-    \ressubitem{prelude: Forked from bbatsov/prelude, with my own customizations on top of it.}
-    \ressubitem{projecteuler: Collection of programs to solve problems of Projecteuler.}
-    \ressubitem{dotfiles: Collection dotfiles, e.g .zshrc, .Xresources, etc.}
-    \ressubitem{emacs-d: My Emacs config repository. Not used anymore.}
+    \ressubitem{
+      arana: Web scaper built on top of a headless web browser
+      PhantomJS, and it can scrape Single Page Applications easily.
+    }
+    \ressubitem{
+      prezto: ZSH config framework forked from sorin-ionescu/prezto.
+      I added customizations to support conda, rvm, etc and added my
+      theme - electro.
+    }
+    \ressubitem{
+      prelude: Emacs configuration framework forked from
+      bbatsov/prelude, with my own customizations on top of it.
+    }
+    \ressubitem{
+      projecteuler: Collection of programs to solve problems on
+      https://projecteuler.net/.
+    }
+    \ressubitem{
+      dotfiles: Collection dotfiles, e.g conky config, .zshrc,
+      .Xresources, etc.
+    }
   \end{ressubsec}
   % END
 \end{ressection}
@@ -218,9 +295,9 @@
 
 \begin{ressection}{Skills}
   % Languages
-  \begin{reslist}{Programming Languages:}
-    \ressubitem{Currently using : PHP, Ruby, Python and Shell.}
-    \ressubitem{Used in past : C and Java.}
+  \begin{reslist}{Languages:}
+    \ressubitem{Currently : PHP, Python, JS, SQL and Shell.}
+    \ressubitem{Past : C and Java.}
   \end{reslist}
   % Tools
   \begin{reslist}{Software:}
@@ -229,19 +306,17 @@
     \ressubitem{Others : AWS SDK, PhantomJS, Kohana, etc.}
   \end{reslist}
   % END
-  % OS
-    \resitem{\textbf{Operating Systems:} GNU/Linux, Mac OS X, Windows OS.}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Achievements
 
-\begin{ressection}{Achievements and Activities}
-  \resitem{Secured 95.05 percentile (overall) in pH test conducted by eLitmus (Aug 2013).}
-  \resitem{Solved 44 problems on Projecteuler (https://projecteuler.net/profile/rajats105.png).}
-  \resitem{Scored 98 out of 100 marks in exam of mathematics in Class X.}
-  \resitem{Attended Amazon AWS re:invent 2015 conference at Las Vegas.}
-\end{ressection}
+% \begin{ressection}{Achievements and Activities}
+%   \resitem{Secured 95.05 percentile (overall) in pH test conducted by eLitmus (Aug 2013).}
+%   \resitem{Solved 44 problems on Projecteuler (https://projecteuler.net/profile/rajats105.png).}
+%   \resitem{Scored 98 out of 100 marks in exam of mathematics in Class X.}
+%   \resitem{Attended Amazon AWS re:invent 2015 conference at Las Vegas.}
+% \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Interests
